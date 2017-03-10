@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
+	<title>13-14</title>
+	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+
+<script type="text/template" id="test">
+	<div class="wrapper">
+		<header><h2><%= header %></h2></header>
+		<form action="#" method="POST">
+			<ul>
+				<% for (var i=0;i<questions.length; i++) {  %>
+				<h4><%= questions[i].title %></h4>
+				<% for (var j=0; j<questions[i].answers.length;j++){ %>
+				<p>
+					<input type="checkbox" name="<%= questions[i].checkName %>" id="<%= questions[i].id[j]%>"/>
+					<label for="<%= questions[i].id[j] %>"><%= questions[i].answers[j] %></label>
+				</p>
+				<% }; %>
+				<% };%>
+			</ul>
+			<!--<button type="button" class="btn btn-secondary success">Проверить мой результат</button>-->
+			<button type="button" class="success">Проверить мой результат</button>
+			<button type="reset" class="danger">Сброс теста</button>
+
+		</form>
+	</div>
+
+</script>
+
+<script type="text">
+<div class="container">
+	<div class="row justify-content-md-center">
+		<div class="col col-lg-2">
+
+		</div>
+		<div class="col-12 col-md-auto">
+
+				<header class="header">
+					<h2>Тест по программированию</h2>
+				</header>
+			<article>
+				<div class="wrap-list">
+					<p class="headline-list">
+						Вопрос №1
+					</p>
+					<ul class="list">
+						<li>Вариант ответа №1</li>
+						<li>Вариант ответа №2</li>
+						<li>Вариант ответа №3</li>
+						<li>Вариант ответа №4</li>
+					</ul>
+				</div>
+				<div class="wrap-list">
+					<p class="headline-list">
+						Вопрос №2
+					</p>
+					<ul class="list">
+						<li>Вариант ответа №10</li>
+						<li>Вариант ответа №20</li>
+						<li>Вариант ответа №30</li>
+						<li>Вариант ответа №40</li>
+					</ul>
+				</div>
+				<div class="wrap-list">
+					<p class="headline-list">
+						Вопрос №3
+					</p>
+					<ul class="list">
+						<li>Вариант ответа №1</li>
+						<li>Вариант ответа №2</li>
+						<li>Вариант ответа №3</li>
+						<li>Вариант ответа №4</li>
+					</ul>
+				</div>
+			</article>
+			<footer class="footer">
+				<h2>footer</h2>
+			</footer>
+		</div>
+
+		<div class="col col-lg-2">
+		<button type="button" class="btn btn-secondary">Проверить мой результат</button>
+
+		</div>
+
+	</div>
+</div>
+</script>
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/template.js"></script>
+
+
+
+
+<!--<script  src="js/obj.js" type=""></script>  &lt;!&ndash;файл с обьектом&ndash;&gt;-->
+<!--<script  src="js/innerHTML.js" type=""></script>-->
+<script  src="js/script.js" type=""></script>
+
+</body>
+</html>
