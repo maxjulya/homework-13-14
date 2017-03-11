@@ -9,21 +9,21 @@ var obj = {
     questions:[
         {title:"Какой метод для работы с JSON неверный",
             chekboxName:["one","two","three"],
-            id:["1","2","3"],
+            id:["id-1","id-2","id-3"],
             answers:["JSON.parse","JSON.stringify","JSON.print"],
-            correct:3
+            correct:'id-3'
         },
         {title:"Какой язык используется во FrontEnd разработке?",
             chekboxName:["one","two","three"],
-            id:["1","2","3"],
+            id:["id-4","id-5","id-6"],
             answers:["Javascript","Java","PHP"],
-            correct:1
+            correct:'id-4'
         },
         {title:"Что такое Grunt?",
             chekboxName:["one","two","three"],
-            id:["1","2","3"],
+            id:["id-7","id-8","id-9"],
             answers:["Сборщик веб-приложений","Сборщик серверов","Сборщик данных"],
-            correct:1
+            correct:'id-7'
         }]
 };
 
