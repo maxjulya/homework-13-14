@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<meta charset="utf-8">
 	<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 	<title>13-14</title>
 	<!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">-->
@@ -16,7 +16,7 @@
 	<div class="wrapper">
 		<header><h2><%= header %></h2></header>
 		<form action="#" method="POST">
-			<ul>
+			<div>
 				<% for (var i=0;i<questions.length; i++) {  %>
 				<h4><%= questions[i].title %></h4>
 				<% for (var j=0; j<questions[i].answers.length;j++){ %>
@@ -26,7 +26,7 @@
 				</p>
 				<% }; %>
 				<% };%>
-			</ul>
+			</div>
 			<!--<button type="button" class="btn btn-secondary success">Проверить мой результат</button>-->
 			<button type="button" class="success">Проверить мой результат</button>
 			<button type="reset" class="danger">Сброс теста</button>
